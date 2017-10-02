@@ -4,9 +4,9 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="/css/styles.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <title>Chat | ChatApp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
 
 <body class="chat">
@@ -47,13 +47,15 @@
         <span>{{createdAt}}</span>
       </div>
       <div class="message__body">
-        <a href="{{url}}" target="_blank">My current location</a>
+        <p>
+          <a href="{{url}}" target="_blank">My current location</a>
+        </p>
       </div>
     </li>
   </script>
 
   <script src="/socket.io/socket.io.js"></script>
-  <script src="/js/libs/jquery-3.2.1.min.js"></script>
+  <script src="/js/libs/jquery-3.1.0.min.js"></script>
   <script src="/js/libs/moment.js"></script>
   <script src="/js/libs/mustache.js"></script>
   <script src="/js/libs/deparam.js"></script>
